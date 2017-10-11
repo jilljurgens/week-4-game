@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script
+  	src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  	integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+	<h1>Crystal Collectors</h1>
+	<div class="container">
+		<p>You will be given a random number at the start of the game. There are four crystals below with unknown values. By clicking on the crystals, you will add to your total. Try to match your number to the number given. Be careful not to go over or you lose. Each time the game starts, the game will change the values of each crystal.
+		<br>Good luck!<br>
+		</p>
+
+		<div id="match">Random number to match</div>
+		<div id="counter">Your number: 0</div>
+		<div id="wins">Wins: </div>
+		<div id="losses">Losses:</div>
+		<div class="crystalbtn" id="image1" data-value="1">
+			<img class="images" src ="assets/images/crystal1.jpg">
+		</div>
+		<div class="crystalbtn" id="image2" data-value="2">
+			<img class="images" src ="assets/images/crystal2.jpg">
+		</div>
+		<div class="crystalbtn" id="image3" data-value="3">
+			<img class="images" src ="assets/images/crystal3.jpg">
+		</div>
+		<div class="crystalbtn" id="image4" data-value="4">
+			<img class="images" src ="assets/images/crystal4.jpg">
+		</div>
+	
+	</div>
+</body>
+</html>

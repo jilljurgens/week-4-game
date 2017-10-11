@@ -1,0 +1,30 @@
+
+img{
+	height: 80px;
+	width: 80px;
+/*	display: inline-block;*/
+	margin: 0 auto;
+}
+h1{
+	text-align: center;
+}
+p{
+	font-size: 18px;
+	line-height: 150%;
+}
+.container{
+	    margin: auto;
+    width: 60%;
+    border: 2px solid cadetblue;
+    padding: 40px;
+}
+.crystalbtn{
+	display: inline-block;
+
+}
+#match, #counter{
+	display: inline-block;
+	padding: 20px;
+	border: 2px dashed red;
+	font-size: 35px;
+}
