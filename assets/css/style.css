@@ -1,7 +1,7 @@
 
 img{
-	height: 80px;
-	width: 80px;
+	height: 120px;
+	width: 120px;
 /*	display: inline-block;*/
 	margin: 0 auto;
 }
@@ -9,7 +9,7 @@ h1{
 	text-align: center;
 }
 p{
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 150%;
 }
 .container{
@@ -17,6 +17,7 @@ p{
     width: 60%;
     border: 2px solid cadetblue;
     padding: 40px;
+    margin-bottom: 20px;
 }
 .crystalbtn{
 	display: inline-block;
@@ -25,6 +26,11 @@ p{
 #match, #counter{
 	display: inline-block;
 	padding: 20px;
-	border: 2px dashed red;
+	border: 2px dashed cadetblue;
 	font-size: 35px;
+
+}
+#wins, #losses, #gameStatus{
+	font-size: 30px;
+	color: cadetblue;
 }

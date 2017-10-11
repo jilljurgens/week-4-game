@@ -50,19 +50,19 @@ $(".crystalbtn").on("click", function(){
 	//var currentCounter = parseInt(currentCounter) + parseInt($(this).data("value"));
 	currentCounter +=  parseInt($(this).data("value"));
 	//var currentCounter = 
-
+ 	$("#gameStatus").empty();
 	$("#counter").text("Your number: " + currentCounter);
 	
 	if (currentCounter === randomNumberBetween19and120){
-	alert("you win");
+	$("#gameStatus").text("You WIN!!!");
 	wins ++;
 	$("#wins").text("Wins " + wins);
 	resetCountsForNewGame();
 }
 	else if (currentCounter >= randomNumberBetween19and120){
-	alert("you lose");
+	$("#gameStatus").text("You Lose, but try again!");
 	losses ++;
-	$("#losses").text("losses " + losses);
+	$("#losses").text("Losses: " + losses);
 	resetCountsForNewGame();
 }	
 
@@ -73,7 +73,7 @@ function resetCountsForNewGame(){
 	randomWholeNumGame();
 	currentCounter = 0;
 	$("#counter").text("Your number: " + currentCounter);
-	$("#match").text("Try to match: " + randomNumberBetween19and120); 
+	$("#match").text("Try to match: " + randomNumberBetween19and120);
 
 }
 
