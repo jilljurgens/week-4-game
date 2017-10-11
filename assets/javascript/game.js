@@ -57,15 +57,25 @@ $(".crystalbtn").on("click", function(){
 	alert("you win");
 	wins ++;
 	$("#wins").text("Wins " + wins);
+	resetCountsForNewGame();
 }
 	else if (currentCounter >= randomNumberBetween19and120){
 	alert("you lose");
 	losses ++;
 	$("#losses").text("losses " + losses);
+	resetCountsForNewGame();
 }	
 
 });
 
+function resetCountsForNewGame(){
+	randomWholeNumCrystal();
+	randomWholeNumGame();
+	currentCounter = 0;
+	$("#counter").text("Your number: " + currentCounter);
+	$("#match").text("Try to match: " + randomNumberBetween19and120); 
+
+}
 
 //create onclick events for each of the crystals and make them add up into the yournumber div
 
