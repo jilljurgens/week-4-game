@@ -43,9 +43,27 @@ $("#image1").data("value", randomWholeNumCrystal());
 
 
 // First attempt at onclick function to grab value and add to the -- this does it for all of the crystals, can I get inv=dividual values from each?
+var currentCounter = 0;
 
 $(".crystalbtn").on("click", function(){
 	console.log($(this).data("value"));
+	//var currentCounter = parseInt(currentCounter) + parseInt($(this).data("value"));
+	currentCounter +=  parseInt($(this).data("value"));
+	//var currentCounter = 
+
+	$("#counter").text("Your number: " + currentCounter);
+	
+	if (currentCounter === randomNumberBetween19and120){
+	alert("you win");
+	wins ++;
+	$("#wins").text("Wins " + wins);
+}
+	else if (currentCounter >= randomNumberBetween19and120){
+	alert("you lose");
+	losses ++;
+	$("#losses").text("losses " + losses);
+}	
+
 });
 
 
